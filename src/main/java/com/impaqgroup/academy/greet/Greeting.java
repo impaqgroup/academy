@@ -10,7 +10,7 @@ import static javax.persistence.TemporalType.TIMESTAMP;
  * Created by impaq on 18.03.15.
  */
 @Entity
-@SequenceGenerator(name = "greeting_seq", initialValue = 1, allocationSize = 100)
+@SequenceGenerator(name = "greeting_seq", sequenceName = "greeting_seq", initialValue = 1, allocationSize = 100)
 public class Greeting {
 
     @Id
