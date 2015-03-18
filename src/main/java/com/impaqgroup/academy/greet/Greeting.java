@@ -3,16 +3,18 @@ package com.impaqgroup.academy.greet;
 import javax.persistence.*;
 import java.util.Date;
 
+import static javax.persistence.GenerationType.SEQUENCE;
 import static javax.persistence.TemporalType.TIMESTAMP;
 
 /**
  * Created by impaq on 18.03.15.
  */
 @Entity
+@SequenceGenerator(name = "greeting_seq", initialValue = 1, allocationSize = 100)
 public class Greeting {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = SEQUENCE, generator = "greeting_seq")
     private Long id;
 
     private String name;
