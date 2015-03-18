@@ -1,1 +1,1 @@
-web: java -jar $JAVA_OPTS target/impaq-academy-0.0.1-SNAPSHOT.jar --server.port=$PORT
+web: java -jar $JAVA_OPTS target/impaq-academy-0.0.1-SNAPSHOT.jar --server.port=$PORT --spring.profiles.active=cloud
