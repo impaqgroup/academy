@@ -2,6 +2,8 @@ package com.impaqgroup.academy.greet;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 /**
  * Created by impaq on 18.03.15.
  */
